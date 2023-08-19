@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Definicion del proyecto</title>
+    <title>Documentación del proyecto</title>
     <style>
         table,th,td{
             border-collapse: collapse;
@@ -22,17 +22,17 @@
     <h1>ANÁLISIS Y DISEÑO - DEFINICIÓN DEL PROYECTO </h1>
     <h3>1. Tres ideas de proyecto con base en los Objetivos de Desarrollo Sostenible</h3>
     <ol>
-        <li>SOFTWARE DE DONACIONES:</li>
+        <li>SOFTWARE DE DONACIONES:</li><br>
         <ul>
             <li><strong>Objetivo 1:</strong> Fin de la pobreza.</li>
             <li><strong>Meta 1.a: </strong> Garantizar una movilización importante de recursos procedentes de diversas fuentes, incluso mediante la mejora de la cooperación para el desarrollo, a fin de proporcionar medios suficientes y previsibles para los países en desarrollo, en particular los países menos adelantados, para poner en práctica programas y políticas encaminados a poner fin a la pobreza en todas sus dimensiones.</li>
         </ul><br>
-        <li>SOFTWARE DE LABORAL:</li>
+        <li>SOFTWARE DE LABORAL:</li><br>
         <ul>
             <li><strong>Objetivo 8: </strong> Trabajo decente y crecimiento económico</li>
             <li><strong>Meta 8.6: </strong> De aquí a 2020, reducir considerablemente la proporción de jóvenes que no están empleados y no cursan estudios ni reciben capacitación.</li>
         </ul><br>
-        <li>SOFTWARE AMBIENTAL:</li>
+        <li>SOFTWARE AMBIENTAL:</li><br>
         <ul>
             <li><strong>Objetivo 12: </strong> Producción y consumo responsables</li>
             <li><strong>Meta 12.5: </strong>De aquí a 2030, reducir considerablemente la generación de desechos mediante actividades de prevención,reducción, reciclado y reutilización.</li>
@@ -118,7 +118,7 @@
         <li><strong>Antecedentes:</strong></li><br>
         <table>
             <th>Aplicación</th>
-            <th>Ofrece cursos en línea integrados en l app</th>
+            <th>Ofrece cursos en línea integrados en la app</th>
             <th>Maneja membresías</th>
             <th>Tiene un apartado de asesoría de hojas de vida</th>
             <th>Filtro de ofertas laborales por rango de ubicación</th>
@@ -147,7 +147,7 @@
             </tr>
             <tr>
                 <th>LinkedIn</th>
-                <td></td>
+                <td>X</td>
                 <td>X</td>
                 <td></td>
                 <td>X</td>
@@ -168,30 +168,43 @@
         </table><br>
         <li><strong>Requisitos funcionales:</strong> Considere cuáles serán los requisitos funcionales de la aplicación. Estas características deben ser coherentes con el análisis realizado en el punto anterior, y presentar un valor agregado en comparación con las aplicaciones existentes. Represente los requisitos funcionales a través de un árbol de descomposición funcional (máximo 4 niveles de profundidad).</li><br>
         <ul>
-            <li><strong>Usuarios:</strong></li>
-            <ol type="1">
-                <li>La aplicación debe proporcionar a los aspirantes información sobre la empresa, ubicación, sector y tipo de empleos que ofrecen.</li>
-                <li>Las empresas deben poder publicar ofertas de trabajo, donde incluyan detalles sobre el cargo, requisitos, ubicación y otros detalles relevantes.</li><br>
-            </ol>
-            <li><strong>Acceso a la aplicación:</strong></li>
+            <li><strong>Usuarios</strong></li><br>
+            <ul>
+                <li><strong>Aspirante</strong></li><br>
+                <ol>
+                    <li>La aplicación debe proporcionar a los aspirantes información sobre la empresa, ubicación, sector y tipo de empleo que ofrecen.</li>
+                    <li>El aspirante podrá pagar y publicar su hoja de vida, en donde incluya su información personal y su curriculum.</li><br>
+                </ol>
+                <li><strong>Empleador:</strong></li><br>
+                <ol>
+                    <li>Las empresas deben poder publicar ofertas de trabajo, donde incluyan detalles sobre el cargo, requisitos, ubicación y otros detalles relevantes.</li>
+                    <li>El empleador tendrá la posibilidad de ver el historial y las entregas del curso que realizó el aspirante.</li>
+                    <li>El empleador deberá poder darle mayor visibilidad a su publicación de empleo mediante una opción de pago en la aplicación.</li><br>
+                </ol>
+                <li><strong>Administrador:</strong></li><br>
+                <ol>
+                    <li>El usuario administrador debe poder manejar una base de datos con la información de cada usuario.</li>
+                    <li>El administrador podrá crear, editar y eliminar ofertas de trabajo por parte de las empresas.</li>
+                    <li>Definición de categorías para las ofertas de trabajo para facilitar la búsqueda y filtrado.</li>
+                    <li>El administrador podrá eliminar, ocultar y advertir la cuenta de cada usuario.</li>
+                    <li> Deberá poder publicar, editar, actualizar y eliminar cursos relacionados con las ofertas de trabajo en la plataforma.</li>
+                    <li>Asignación de cursos obligatorios y recomendados para puestos de trabajo.</li><br>
+                </ol>
+            </ul>
+            <li><strong>Aplicación</strong></li><br>
             <ol>
-                <li>El usuario y la empresa, deben poder realizar un registro de cuenta.</li>
-                <li>La aplicación debe tener una interfaz amigable e intuitiva y fácil de usar para todas las edades.
-                </li><br>
+                <li>La aplicación debe permitir realizar un registro de cuenta.</li>
+                <li>En caso de pérdida de cuenta la aplicación proporcionará la posibilidad de restaurarlos por medio del correo asociado a la cuenta.</li>
+                <li>La aplicación proporcionará una calificación de los estudiantes con mejores resultados, esto con el fin de diferenciar a los mismos según su rendimiento y habilidades al desarrollar las pruebas.</li>
+                <li>La aplicación deberá poder recolectar información y datos personales de cada usuario, aspirante y empresa.</li>
+                <li>El software debe garantizar la seguridad de los datos personales e información de los usuarios.</li><br>
             </ol>
-            <li><strong>Cursos:</strong></li>
+            <li><strong>Cursos</strong></li><br>
             <ol>
                 <li>La app debe brindar la posibilidad de comprar o inscribirse a los cursos en línea que se manejan directamente en la plataforma.</li>
-                <li>Una vez realizado el curso este debe reflejarse en el perfil del usuario que lo terminó.
-                </li>
-                <li>Los usuarios de 14 a 26 años deben poder acceder de manera gratuita a los cursos.  
-                </li>
-                <li>La app debe permitir que los usuarios visualicen la lista de los cursos que han realizado.
-                </li><br>
-            </ol>
-            <li><strong>Seguridad y Privacidad:</strong></li>
-            <ol>
-                <li>El software debe garantizar la seguridad de los datos personales e información de los usuarios.
+                <li>Una vez realizado el curso este debe reflejarse en el perfil del usuario que lo terminó.</li>
+                <li>Los usuarios de 14 a 26 años deben poder acceder de manera gratuita a los cursos.</li>
+                <li>Se debe permitir que los usuarios visualicen la lista de los cursos que han realizado.
                 </li><br>
             </ol>
         </ul>
@@ -210,7 +223,7 @@
         </ul>
     </ol>
     <footer>
-        <p>Bibliografía</p>
+        <p><strong>Bibliografía</strong></p>
         <ul>
             <li>W. Wei, B. Wang, B. Zhang, R. Scherer and R. Damaševičius, "Online Job Search and Recruitment Platform for College Students Based on SSH," 2020 International Conference on Intelligent Computing and Human-Computer Interaction (ICHCI), Sanya, China, 2020, pp. 355-358, doi: 10.1109/ICHCI51889.2020.00081.</li>
             <li>E. Bagarukayo and E. Mwesigwa, "'Jobs256' Mobile app linking job seekers to job opportunities," 2017 IST-Africa Week Conference (IST-Africa), Windhoek, Namibia, 2017, pp. 1-7, doi: 10.23919/ISTAFRICA.2017.8102392.</li>
